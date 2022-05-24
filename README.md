@@ -2,6 +2,7 @@
 A interface demo for show some nlp tasks
 
 There are three models deplay in a server, that can be test by call some http requests:
+(Because use cpu to infer, you many wait some seconds, when call them.)
 
 1 English question to Wikidata style Sparql Query interface:
 
