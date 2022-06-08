@@ -34,8 +34,7 @@ Upload a csv file and ask the question.(The default data used in that is same wi
 English question to Wikidata style Sparql Query interface:
 </h2>
 
-<img width="1292" alt="3" src="https://user-images.githubusercontent.com/27874014/172537586-cab98f29-0c99-43c3-8121-6d039919de35.png">
-
+![3](https://user-images.githubusercontent.com/27874014/172563175-977df544-fdac-4a9a-a218-d352ccb95092.png)
 
 This is a self trained encoder-decoder on english quetion to wikidata sparql query dataset (with some data augumentation)
 
