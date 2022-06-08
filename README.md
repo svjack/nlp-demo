@@ -65,9 +65,21 @@ Generate a question on entity that located in context:
 <img width="1292" alt="5" src="https://user-images.githubusercontent.com/27874014/172537627-9f5d4c75-94bf-480f-afbf-b692a0a4dcac.png">
 
 
-This is a self trained generator that ca generate a entity related queston on context.
+This is a self trained generator that generate a entity related queston on context.
 (Guarantee the entity is located in context)
 
 You can try to input a context and one entity in context to see the question.
+
+<br/>
+
+<h2>
+Generate question and answer on context:
+</h2>
+
+<img width="1292" alt="6" src="https://user-images.githubusercontent.com/27874014/172558081-3d166855-056b-4754-b1ff-da59cdf02a91.png">
+
+This is a self trained generator that generate question and its answer on context.
+
+You can try to input a context to see relative questions and answers.
 
 <br/>
