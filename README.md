@@ -8,29 +8,6 @@ You can visit http://zfcjelr4.dongtaiyuming.net:80 to try them
 
 <br/>
 
-<h2>
-Answer question by tableau data:
-</h2>
-
-This is the demo of project:
-https://github.com/svjack/tableQA-Chinese 
-Which is a chinese tableqa project
-
-You can edit tableau data sheet and the question you want to ask online, and get the answer by click "Get Answer" button
-
-<img width="1292" alt="1" src="https://user-images.githubusercontent.com/27874014/172537468-019ea82b-aefc-47f3-975f-6112f6269d0c.png">
-
-
-And if you want to try your data and relative question, you can switch the top tab to [2 Answer question by upload tableau data]
-
-<img width="1292" alt="2" src="https://user-images.githubusercontent.com/27874014/172537546-4c912626-0101-47ad-ad6c-d39241d2f259.png">
-
-
-Upload a csv file and ask the question.(The default data used in that is same with previous tab)
-
-Some data and question can be seen in: https://github.com/svjack/tableQA-Chinese/blob/main/notebook/fine-tune-on-finance.ipynb
-
-<br/>
 
 <h2>
 English question to Wikidata style Sparql Query interface:
@@ -82,5 +59,27 @@ Generate question and answer on context:
 This is a self trained generator that generate question and its answer on context.
 
 You can try to input a context to see relative questions and answers.
+
+<br/>
+
+<h2>
+Answer question by tableau data:
+</h2>
+
+This is the demo of project:
+https://github.com/svjack/tableQA-Chinese 
+Which is a chinese tableqa project
+
+You can edit tableau data sheet and the question you want to ask online, and get the answer by click "Get Answer" button
+
+<img width="1292" alt="截屏2022-06-08 下午9 55 26" src="https://user-images.githubusercontent.com/27874014/172634785-f3b91019-218a-4896-89f1-a5e4c1a42317.png">
+
+And if you want to try your data and relative question, you can switch the top tab to [2 Answer question by upload tableau data]
+
+<img width="1291" alt="截屏2022-06-08 下午9 56 42" src="https://user-images.githubusercontent.com/27874014/172634994-2c05af9d-ca32-405f-9ca4-a3960039c0de.png">
+
+Upload a csv file and ask the question.(The default data used in that is same with previous tab)
+
+Some data and question can be seen in: https://github.com/svjack/tableQA-Chinese/blob/main/notebook/fine-tune-on-finance.ipynb
 
 <br/>
