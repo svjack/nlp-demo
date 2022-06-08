@@ -1,76 +1,73 @@
 # nlp-demo
 A interface demo for show some nlp tasks
 
-There are three models deplay in a server, that can be test by call some http requests:
+There are four models deplay in a server, that can be test by call some http requests:
 (Because use cpu to infer, you many wait some seconds, when call them.)
 
-1 English question to Wikidata style Sparql Query interface:
+You can visit http://zfcjelr4.dongtaiyuming.net:80 to try them
 
-```py
-http://zfcjelr4.dongtaiyuming.net:80/eng_sent_to_query?sent=Where is the city that XiHu located in ?
-```
-OR
-```py
-port = 80
-url_format = "http://zfcjelr4.dongtaiyuming.net:{}/{}"
-resp = requests.post(
-    url = url_format.format(port, s2q_task),
-    data = {
-        "sent": "Where is the city that XiHu located in ?"
-    }
-).content
-resp.decode()
-```
+<br/>
 
-this will produce
-```py
-{'query': 'select distinct?obj where  wd:XiHu wdt:located_in?obj.?obj wdt:not_a_type_but_is_instance_of wd:administrative_division_of_the_South_Asia '}
-```
+<h2>
+Answer question by tableau data:
+</h2>
 
-2 Squad style chinese question answer interface:
+This is the demo of project:
+https://github.com/svjack/tableQA-Chinese 
+Which is a chinese tableqa project
 
-```py
-http://zfcjelr4.dongtaiyuming.net:80/squad?question=特朗普什么时候出生？&context=美国总统特朗普生于上世纪,他在56岁时获得这个奖项。
-```
-OR
-```py
-squad_task = "squad"
-resp = requests.post(
-    url = url_format.format(port, squad_task),
-    data = {
-        "question": "特朗普什么时候出生？",
-        "context": "美国总统特朗普生于上世纪" + ",他在56岁时获得这个奖项。"
-    }
-).content
-resp.decode()
-```
+You can edit tableau data sheet and the question you want to ask online, and get the answer by click "Get Answer" button
 
-this will produce
-```py
-{'answers': [{'answer': '上世纪', 'type': 'extractive', 'score': 0.5670798122882843, 'context': '美国总统特朗普生于上世纪,他在56岁时获得这个奖项。', 'offsets_in_document': [{'start': 9, 'end': 12}], 'offsets_in_context': [{'start': 9, 'end': 12}], 'document_id': 'f3633225ec0d3e98b834cecf565d5df3', 'meta': {}}], 'query': '特朗普什么时候出生？', 'no_ans_gap': 0.5969600677490234}
-```
+<img width="1292" alt="1" src="https://user-images.githubusercontent.com/27874014/172537468-019ea82b-aefc-47f3-975f-6112f6269d0c.png">
 
-3 Generate a question on entity that located in context:
 
-```py
-http://zfcjelr4.dongtaiyuming.net:80/gen_question?span=特朗普&context=美国总统特朗普生于上世纪,他在56岁时获得这个奖项。
-```
-OR 
-```py
-qst_gen_task = "gen_question"
-resp = requests.post(
-    url = url_format.format(port, qst_gen_task),
-    data = {
-        "span": "特朗普",
-        "context": "美国总统特朗普生于上世纪" + "他在56岁时获得这个奖项。"
-    }
-).content
-resp.decode()
-```
+And if you want to try your data and relative question, you can switch the top tab to [2 Answer question by upload tableau data]
 
-this will produce
-```py
-{'question': ['哪个总统赢得了奖项?']}
-```
+<img width="1292" alt="2" src="https://user-images.githubusercontent.com/27874014/172537546-4c912626-0101-47ad-ad6c-d39241d2f259.png">
 
-You can change the parameters in requests to see the output.
+
+Upload a csv file and ask the question.(The default data used in that is same with previous tab)
+
+<br/>
+
+<h2>
+English question to Wikidata style Sparql Query interface:
+</h2>
+
+<img width="1292" alt="3" src="https://user-images.githubusercontent.com/27874014/172537586-cab98f29-0c99-43c3-8121-6d039919de35.png">
+
+
+This is a self trained encoder-decoder on english quetion to wikidata sparql query dataset (with some data augumentation)
+
+This may be useful in some Knowledge Base construction problem or Question Answer task on Knowledge Base.
+
+You can try to input a english question and get the sparql query of this question. 
+
+<br/>
+
+<h2>
+Squad style chinese question answer interface:  
+</h2>
+
+<img width="1292" alt="4" src="https://user-images.githubusercontent.com/27874014/172537608-7e4a8f0b-2a88-4878-a5fe-a021a2db95a4.png">
+
+
+This is a self trained squad style extractive question answer model
+
+You can try to input a question and realtive context to see the answer.
+
+<br/>
+
+<h2>
+Generate a question on entity that located in context:  
+</h2>
+
+<img width="1292" alt="5" src="https://user-images.githubusercontent.com/27874014/172537627-9f5d4c75-94bf-480f-afbf-b692a0a4dcac.png">
+
+
+This is a self trained generator that ca generate a entity related queston on context.
+(Guarantee the entity is located in context)
+
+You can try to input a context and one entity in context to see the question.
+
+<br/>
