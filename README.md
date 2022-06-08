@@ -28,6 +28,8 @@ And if you want to try your data and relative question, you can switch the top t
 
 Upload a csv file and ask the question.(The default data used in that is same with previous tab)
 
+Some data and question can be seen in: https://github.com/svjack/tableQA-Chinese/blob/main/notebook/fine-tune-on-finance.ipynb
+
 <br/>
 
 <h2>
