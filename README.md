@@ -10,20 +10,6 @@ You can visit http://zfcjelr4.dongtaiyuming.net:80 to try them
 
 
 <h2>
-英文对维基百科SparqlQuery生成器：English question to Wikidata style Sparql Query interface:
-</h2>
-
-![3](https://user-images.githubusercontent.com/27874014/172563175-977df544-fdac-4a9a-a218-d352ccb95092.png)
-
-This is a self trained encoder-decoder on english quetion to wikidata sparql query dataset (with some data augumentation)
-
-This may be useful in some Knowledge Base construction problem or Question Answer task on Knowledge Base.
-
-You can try to input a english question and get the sparql query of this question. 
-
-<br/>
-
-<h2>
 Squad中文抽取式问答：Squad style chinese question answer interface:
 </h2>
 
@@ -35,9 +21,10 @@ This is a self trained squad style extractive question answer model
 You can try to input a question and realtive context to see the answer.
 
 <br/>
-实体问句生成器：Generate a question on entity that located in context:
-<h2>
 
+
+<h2>
+实体问句生成器：Generate a question on entity that located in context:
 </h2>
 
 <img width="1292" alt="5" src="https://user-images.githubusercontent.com/27874014/172537627-9f5d4c75-94bf-480f-afbf-b692a0a4dcac.png">
@@ -63,6 +50,37 @@ You can try to input a context to see relative questions and answers.
 <br/>
 
 <h2>
+英文对维基百科SparqlQuery生成器：English question to Wikidata style Sparql Query interface:
+</h2>
+
+![3](https://user-images.githubusercontent.com/27874014/172563175-977df544-fdac-4a9a-a218-d352ccb95092.png)
+
+This is a self trained encoder-decoder on english quetion to wikidata sparql query dataset (with some data augumentation)
+
+This may be useful in some Knowledge Base construction problem or Question Answer task on Knowledge Base.
+
+You can try to input a english question and get the sparql query of this question. 
+
+<br/>
+
+<h2>
+维基百科知识图谱问答：Knowledge Graph Question Answer on Wikidata:
+</h2>
+
+![Screenshot 2022-06-13 042434](https://user-images.githubusercontent.com/27874014/173252258-6bd181d1-7da8-409d-9447-26c6ae1441c2.png)
+
+This is a self construct Knowledge Graph Question Answer project demo, with some self trained slot-filling and ranking
+
+model for answer question over wikidata.
+
+You can try to input a question and get the answer in wikidata. (May require some time to infer by cpu)
+
+The output is a ordering list, that answer are located in top some.
+
+<br/>
+
+
+<h2>
 数据表问答：Answer question by tableau data:
 </h2>
 
@@ -84,6 +102,7 @@ Some data and question can be seen in: https://github.com/svjack/tableQA-Chinese
 
 <br/>
 
+<!--
 <h2>
 文本搜索与向量搜索：Text Search on Text or Embedding:
 </h2>
@@ -103,4 +122,4 @@ Because use cpu to infer, may consume some time to build index when search by co
 And you can also upload some text by csv (which has only one column named by "context" and row count limit by 100)
 and try to search (consume some time to build text index or embedding index)
 <br/>
-
+-->
