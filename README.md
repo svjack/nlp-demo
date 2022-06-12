@@ -75,7 +75,7 @@ model for answer question over wikidata.
 
 You can try to input a question and get the answer in wikidata. (May require some time to infer by cpu)
 
-The output is a ordering list, that answer are located in top some.
+The output is a ordering list, that answers are located in top.
 
 <br/>
 
