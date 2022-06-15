@@ -102,7 +102,6 @@ Some data and question can be seen in: https://github.com/svjack/tableQA-Chinese
 
 <br/>
 
-<!--
 <h2>
 文本搜索与向量搜索：Text Search on Text or Embedding:
 </h2>
@@ -118,8 +117,7 @@ or by cos similarity (embed by a cross-language embedding model)
 You can try to input a chinese query when search by text or input query in any language (chinese or english for example)
 and see the output.
 
-Because use cpu to infer, may consume some time to build index when search by cos.
-And you can also upload some text by csv (which has only one column named by "context" and row count limit by 100)
+<!-- Because use cpu to infer, may consume some time to build index when search by cos.-->
+And you can also upload some text by csv (which has only one column named by "context" and row count limit by 300)
 and try to search (consume some time to build text index or embedding index)
 <br/>
--->
