@@ -97,7 +97,7 @@ A interface demo for show some nlp tasks
 <br/>
 
 <h3>
-自构建的 TableQA 数据表问答，可在线编辑数据或上传csv数据，之后通过输入问题得到答案。
+自训练构建的 TableQA 数据表问答，可在线编辑数据或上传csv数据，之后通过输入问题得到答案。
 一些数据和问句 可以参考：
 https://github.com/svjack/tableQA-Chinese/blob/main/notebook/fine-tune-on-finance.ipynb
 </h3>
