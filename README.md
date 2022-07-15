@@ -65,7 +65,7 @@ A interface demo for show some nlp tasks
 </h3>
 
 
-![FireShot Capture 010 - Gradio - zfcjelr4 dongtaiyuming net](https://user-images.githubusercontent.com/27874014/178889748-3e318a53-a63f-47a9-83e8-9f51c10d8a9c.png)
+![FireShot Capture 013 - Gradio - zfcjelr4 dongtaiyuming net](https://user-images.githubusercontent.com/27874014/179134092-89e777b9-5a1b-4597-a852-50d917891fc7.png)
 
 
 <br/>
